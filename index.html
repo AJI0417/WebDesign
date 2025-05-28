@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>資工系「網頁設計」課程基本範例網頁</title>
+    <!-- 載入 bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- END 載入 bootstrap -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/Aqua_ball.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >首頁</a
+              >
+            </li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="./about.html"
+				  >關於我</a
+				>
+			  </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                產品
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./navbar.html">Navbar</a>
+                </li>
+                <li><a class="dropdown-item" href="./card.html">Card</a></li>
+                <li>
+                  <a class="dropdown-item" href="./autopage.html">AutoPage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./activetext.html"
+                    >ActiveText</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./list.html">ListPage</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./connect.html">與我聯絡</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/cat1.png"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>貓咪一號</h5>
+            <p>這是一隻可愛的貓，擁有閃亮的眼睛和柔軟的毛。</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/cat2.png"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>貓咪二號</h5>
+            <p>喜歡在陽光下打盹，是主人最好的夥伴。</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/dog1.png"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>狗狗一號</h5>
+            <p>忠心耿耿，樂於奔跑，是家裡的開心果！</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/dog2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>家犬</h5>
+            <p>
+              狗，是人類最早馴化的動物之一，牠忠誠、親人，為人類提供守護與陪伴。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Card -->
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <!-- 卡片 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">執行長</div>
+            <img
+              src="./img/professor.png"
+              class="card-img-top"
+              alt="教授圖片"
+            />
+            <div class="card-body">
+              <h5 class="card-title">張霸 先生</h5>
+              <p class="card-text">
+                國立交通大學電子研究所博士，曾任AAA公司研發主管...
+              </p>
+              <a
+                href="https://ict.honda-chen.tw"
+                target="_blank"
+                class="btn btn-primary"
+                >Profile</a
+              >
+            </div>
+            <div class="card-footer">管理大樓 8 樓</div>
+          </div>
+        </div>
+
+        <!-- 卡片 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">技術長</div>
+            <img src="./img/man.png" class="card-img-top" alt="男同學圖片" />
+            <div class="card-body">
+              <h5 class="card-title">魏豪 博士</h5>
+              <p class="card-text">
+                國立清華大學電機工程研究所博士，曾任BBB大學教授...
+              </p>
+              <a href="#" class="btn btn-primary">Profile</a>
+            </div>
+            <div class="card-footer">研發大樓 3 樓</div>
+          </div>
+        </div>
+
+        <!-- 卡片 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">財務長</div>
+            <img src="./img/woman.png" class="card-img-top" alt="女同學圖片" />
+            <div class="card-body">
+              <h5 class="card-title">Jessica Chen</h5>
+              <p class="card-text">
+                國立台灣大學企業管理研究所碩士，曾任CCC公司財務處長...
+              </p>
+              <a href="#" class="btn btn-primary">Profile</a>
+            </div>
+            <div class="card-footer">管理大樓 8 樓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./navbar.html" class="nav-link px-2 text-body-secondary"
+              >Navbar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./card.html" class="nav-link px-2 text-body-secondary"
+              >Card</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./autopage.html" class="nav-link px-2 text-body-secondary"
+              >AutoPage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./activetext.html"
+              class="nav-link px-2 text-body-secondary"
+              >ActiveText</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./list.html" class="nav-link px-2 text-body-secondary"
+              >ListPage</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 AJI CYUT CSIE</p>
+      </footer>
+    </div>
+  </body>
+</html>
+<script src="/js/honda.js"></script>
