@@ -14,12 +14,12 @@
     <!-- END 載入 bootstrap -->
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-lg">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./img/Aqua_ball.png" alt="Logo" />
+            <img src="../img/Aqua_ball.png" alt="Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -38,7 +38,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./index.html"
+                  href="../index.html"
                   >首頁</a
                 >
               </li>
@@ -46,7 +46,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./about.html"
+                  href="../about.html"
                   >關於我</a
                 >
               </li>
@@ -62,19 +62,13 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="./products/product1.html"
-                      >線材</a
-                    >
+                    <a class="dropdown-item" href="./product1.html">線材</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./products/product2.html"
-                      >鍵盤滑鼠</a
-                    >
+                    <a class="dropdown-item" href="./product2.html">鍵盤滑鼠</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./products/product3.html"
-                      >介面卡</a
-                    >
+                    <a class="dropdown-item" href="./product3.html">介面卡</a>
                   </li>
                 </ul>
               </li>
@@ -85,158 +79,89 @@
           </div>
         </div>
       </nav>
-      <!-- AutoPage -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/cat1.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>貓咪一號</h5>
-              <p>這是一隻可愛的貓，擁有閃亮的眼睛和柔軟的毛。</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/cat2.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>貓咪二號</h5>
-              <p>喜歡在陽光下打盹，是主人最好的夥伴。</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/dog1.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>狗狗一號</h5>
-              <p>忠心耿耿，樂於奔跑，是家裡的開心果！</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/dog2.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>家犬</h5>
-              <p>
-                狗，是人類最早馴化的動物之一，牠忠誠、親人，為人類提供守護與陪伴。
-              </p>
-            </div>
+      <!-- Banner -->
+      <div class="container-lg">
+        <div
+          class="row bg-image align-items-center"
+          style="background-image: url('../img/bkg3.webp'); height: 10vh"
+        >
+          <div class="col text-light fw-bold text-center">
+            <span class="text-light fs-1">線材</span>
+            <span class="text-light fw-bold fs-5">
+              s11227058 謝祥立(
+              <span id="Width"></span> x <span id="Height"></span>)
+            </span>
           </div>
         </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- Card -->
-      <div class="container mt-4">
-        <div class="row justify-content-center">
-          <!-- 卡片 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-header">執行長</div>
-              <img
-                src="./img/professor.png"
-                class="card-img-top"
-                alt="教授圖片"
-              />
-              <div class="card-body">
-                <h5 class="card-title">張霸 先生</h5>
-                <p class="card-text">
-                  國立交通大學電子研究所博士，曾任AAA公司研發主管...
+      <!-- Main -->
+      <div class="container-lg">
+        <!-- BreadCrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">線材</li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <!-- 左側圖片 -->
+              <div class="col-md-6">
+                <img src="../img/repeatbkg1.webp" alt="幾何圖樣" />
+              </div>
+              <!-- 右側文字內容 -->
+              <div class="col-md-6">
+                <p>
+                  電纜，是連接兩個設備傳輸電信號的組件，由兩條或更多的導線粘合、扭曲或編織在一起形成。電纜的用途廣泛並且每個用途都需特製，它的功能大至傳輸電能、電信號和實現磁能轉換的線材產品。
+                  電力纜通常由傳導電力或電信號的線芯和起到保護作用的絕緣層和屏蔽層組成。只有一條纜芯且直徑較細的電纜常被稱為絕緣線，而沒有絕緣護套的線，被稱為裸線。
+                  電纜，是連接兩個設備傳輸電信號的組件，由兩條或更多的導線粘合、扭曲或編織在一起形成。電纜的用途廣泛並且每個用途都需特製，它的功能大至傳輸電能、電信號和實現磁能轉換的線材產品。
+                  電力纜通常由傳導電力或電信號的線芯和起到保護作用的絕緣層和屏蔽層組成。只有一條纜芯且直徑較細的電纜常被稱為絕緣線，而沒有絕緣護套的線，被稱為裸線。
                 </p>
-                <a
-                  href="https://ict.honda-chen.tw"
-                  target="_blank"
-                  class="btn btn-primary"
-                  >Profile</a
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#aaa"
+                  >電纜</a
                 >
-              </div>
-              <div class="card-footer">管理大樓 8 樓</div>
-            </div>
-          </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bbb">USB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#ccc">HDMI</a>
+              </li>
+            </ul>
 
-          <!-- 卡片 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-header">技術長</div>
-              <img src="./img/man.png" class="card-img-top" alt="男同學圖片" />
-              <div class="card-body">
-                <h5 class="card-title">魏豪 博士</h5>
-                <p class="card-text">
-                  國立清華大學電機工程研究所博士，曾任BBB大學教授...
-                </p>
-                <a href="#" class="btn btn-primary">Profile</a>
+            <!-- 對應內容區塊 -->
+            <div class="tab-content">
+              <div class="tab-pane show active" id="aaa">
+                <img
+                  src="../img/Pink_ball.png"
+                  style="width: 36px; height: 36px"
+                />
+                電纜（Cable）是一種用來傳輸電力、訊號或數據的電線，通常由多個導線或纜線束組成，並包裝在一個絕緣保護層中。
+                簡單來說，它是由導線、絕緣體和外護層組成的線材，用來將電能或訊號從一處傳送到另一處。
               </div>
-              <div class="card-footer">研發大樓 3 樓</div>
-            </div>
-          </div>
-
-          <!-- 卡片 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-header">財務長</div>
-              <img
-                src="./img/woman.png"
-                class="card-img-top"
-                alt="女同學圖片"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Jessica Chen</h5>
-                <p class="card-text">
-                  國立台灣大學企業管理研究所碩士，曾任CCC公司財務處長...
-                </p>
-                <a href="#" class="btn btn-primary">Profile</a>
+              <div class="tab-pane" id="bbb">
+                通用序列匯流排是連接電腦與裝置的一種序列匯流排標準，也是一種輸入輸出連接埠的技術規範，
+                廣泛應用於個人電腦和行動裝置等資訊通訊產品，並擴展至攝影器材、數位電視、遊戲機等其它相關領域。
               </div>
-              <div class="card-footer">管理大樓 8 樓</div>
+              <div class="tab-pane" id="ccc">
+                高畫質多媒體介面是一種全數位化影像和聲音傳送介面，可以傳送未壓縮的音訊及視訊訊號。
+                HDMI可用於機上盒、DVD播放機、個人電腦、電視遊樂器、綜合擴大機、數位音響與電視機等裝置。
+                HDMI可以同時傳送音訊和視訊訊號。音訊和視訊訊號採用同一條線材的設計大大簡化系統線路的安裝難度。
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Footer -->
       <footer
-        class="text-center text-lg-start text-white"
+        class="text-center text-lg-start text-white mt-1"
         style="background-color: #1c2331"
       >
         <!-- Section: Social media -->
@@ -371,6 +296,6 @@
         </div>
       </footer>
     </div>
+    <script src="/js/honda.js"></script>
   </body>
 </html>
-<script src="/js/honda.js"></script>
